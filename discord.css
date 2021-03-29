@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: lightgrey;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-template:
+    "servers header header header" 50px
+    "servers rooms messages people" 1fr/
+    50px 2fr 4fr 2fr;
+}
+
+.servers {
+  grid-area: servers;
+  background-color: blue;
+}
+
+.header {
+  grid-area: header;
+  background-color: purple;
+}
+
+.rooms {
+  grid-area: rooms;
+  background-color: pink;
+}
+
+.messages {
+  grid-area: messages;
+  background-color: yellow;
+}
+
+.people {
+  grid-area: people;
+  background-color: green;
+}

@@ -11,8 +11,8 @@
   display: grid;
   grid-template:
     "header header header" 50px
-    "profile main news" 1fr/
-    1fr 1fr 1fr;
+    "folders mail menu" 1fr/
+    1fr 5fr 50px;
 }
 
 .header {
@@ -20,22 +20,17 @@
   background-color: blue;
 }
 
-.main {
-  grid-area: main;
-  background-color: pink;
-}
-
-.profile {
-  grid-area: profile;
+.folders {
+  grid-area: folders;
   background-color: purple;
 }
 
-.main {
-  grid-area: main;
+.mail {
+  grid-area: mail;
   background-color: pink;
 }
 
-.news {
-  grid-area: news;
+.menu {
+  grid-area: menu;
   background-color: red;
 }
